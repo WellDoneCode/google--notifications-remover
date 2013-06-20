@@ -1,0 +1,28 @@
+{
+  "name": "Google+ Notifications Remover",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Extension for Google Chrome allows to hide Google+ 'bell' notifications",
+  "homepage_url": "http://www.welldonecode.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "http://*.google.com/*",
+    "https://*.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.google.com/*",
+        "https://*.google.com/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
