@@ -15,6 +15,7 @@ chrome.extension.sendMessage({}, function(response) {
         var element = "<style type='text/css'>"
             //+ "a.gb_n:not(.gb_c)"
             + ".gb_qa .gb_n,"
+            + ".gb_ra .gb_n,"
             + "#sb-button-notify.yt-uix-button"
             + "{"
             + "    display: none;"
