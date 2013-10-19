@@ -16,6 +16,7 @@ chrome.extension.sendMessage({}, function(response) {
             //+ "a.gb_n:not(.gb_c)"
             + ".gb_qa .gb_n,"
             + ".gb_ra .gb_n,"
+            + "#gbg1,"
             + "#sb-button-notify.yt-uix-button"
             + "{"
             + "    display: none;"
