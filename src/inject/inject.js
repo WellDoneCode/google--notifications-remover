@@ -26,7 +26,13 @@ chrome.extension.sendMessage({}, function(response) {
 		// ----------------------------------------------------------
 		// This part of the script triggers when page is done loading
 		// ----------------------------------------------------------
-
+        var potentialElems = document.querySelectorAll(".gb_n");
+        for(var i=0;i<potentialElems.length;i++)
+        {
+            var elem = potentialElems[i];
+            if(elem.href && elem.href.indexOf("plus.google.com/u/0/notifications") != -1)
+                elem.style.display = "none";
+        }
 	}
 	}, 10);
 });
