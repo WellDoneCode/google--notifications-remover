@@ -33,7 +33,7 @@ chrome.extension.sendMessage({}, function(response) {
 
         function removeNotifications()
         {
-            var potentialElems = document.querySelectorAll(".gb_n, .gb_q");
+            var potentialElems = document.querySelectorAll(".gb_n, .gb_q, .gb_r");
             for(var i=0;i<potentialElems.length;i++)
             {
                 var elem = potentialElems[i];
