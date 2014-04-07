@@ -9,6 +9,26 @@ var observerForBody = new MutationObserver(function(mutations) {
                 if(observerForBody)
                     observerForBody.disconnect();
 
+                // Because of bug in Chrome match_excludes with CSS files making CSS inline
+                var style = document.createElement("style");
+                style.setAttribute('type', 'text/css');
+                style.innerHTML =
+                    /*".gb_qa .gb_n,"
+                    + ".gb_ra .gb_n,"
+                    + ".gb_qa .gb_q,"
+                    + ".gb_ra .gb_q,"
+                    + "#gbg1,"
+                    + "#sb-button-notify.yt-uix-button,"
+                    + */"a[href*='plus.google.com/u/0/notifications'],"
+                    + "a[href*='plus.google.com/u/1/notifications']"
+                    + "{"
+                    + "    display: none !important;"
+                    + "}";
+                if(document.body.childNodes.length > 0)
+                    document.body.insertBefore(style, document.body.childNodes[0]);
+                else
+                    document.body.appendChild(style);
+
                 observer.observe(document.body, {
                     childList: true
                 });
