@@ -1,7 +1,9 @@
 var css =
     ".yt-uix-clickcard #sb-button-notify," // YouTube
     + "a[href*='plus.google.com/u/0/notifications'],"
-    + "a[href*='plus.google.com/u/1/notifications']"
+    + "a[href*='plus.google.com/u/1/notifications'],"
+    + "a[aria-label$='Unread notifications'],"
+    + "a[aria-label*='Непрочитанных оповещений']"
     + "{"
     + "    display: none !important;"
     + "}";
