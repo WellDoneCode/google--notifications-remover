@@ -3,7 +3,8 @@ var css =
     + "a[href*='plus.google.com/u/0/notifications'],"
     + "a[href*='plus.google.com/u/1/notifications'],"
     + "a[aria-label$='Unread notifications'],"
-    + "a[aria-label*='Непрочитанных оповещений']"
+    + "a[aria-label*='Непрочитанных оповещений'],"
+    + ".gb_ga[aria-label*='Google Notifications']"
     + "{"
     + "    display: none !important;"
     + "}";
