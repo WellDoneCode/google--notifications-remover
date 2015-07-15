@@ -4,8 +4,8 @@ var css =
     + "a[href*='plus.google.com/u/1/notifications'],"
     + "a[aria-label$='Unread notifications'],"
     + "a[aria-label*='Непрочитанных оповещений'],"
-    + ".gb_ga[aria-label*='Google Notifications'],"
-    + ".gb_ga[aria-label*='Оповещения Google']"
+    + "a[aria-label*='Google Notifications'],"
+    + "a[aria-label*='Оповещения Google']"
     + "{"
     + "    display: none !important;"
     + "}";
